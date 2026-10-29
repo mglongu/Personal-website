@@ -9,8 +9,8 @@ is looser than the one before.
 Plain HTML, CSS and JavaScript — no build step. Served with GitHub Pages.
 
 - `index.html` — content, SEO meta tags and schema.org data
-- `styles.css` — layout and typography
-- `script.js` — the thread: generates the knots and draws them on scroll
+- `styles.css` — layout and typography (dark theme, Arvo)
+- `script.js` — the rolling ball of yarn, the interactive fibre background, the custom cursor and the company marquee
 
 To change the knots, edit `data-loops` (how many loops) and `data-mess`
-(0 = neat, 1 = tangled) on each timeline item in `index.html`.
+(0 = neat, 1 = tangled) on each experience item in `index.html`.
