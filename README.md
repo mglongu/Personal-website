@@ -2,15 +2,16 @@
 
 > I love making my life easier. I get paid to do the same for others.
 
-Personal landing page and CV. A single red thread starts as a tangled ball and
-unravels down the page as you scroll: every career step is a knot, and each knot
-is looser than the one before.
+Personal CV website: white page, Inter Tight, vermilion + cobalt accents.
+Biography, Curriculum (timeline) and Contact open and close on click.
+On desktop a strip on the right scrolls the logos of companies I've worked
+for and with; on mobile the logos scroll sideways under the motto.
 
 Plain HTML, CSS and JavaScript — no build step. Served with GitHub Pages.
 
-- `index.html` — content, SEO meta tags and schema.org data
-- `styles.css` — layout and typography (dark theme, Arvo)
-- `script.js` — the rolling ball of yarn, the interactive fibre background, the custom cursor and the company marquee
+- `index.html` — content, SEO meta tags, schema.org data, Content Security Policy
+- `styles.css` — layout, colours, timeline, logo strip
+- `script.js` — opening/closing sections, seamless logo loop, mouse light
+- `logos/` — company logos (PNG, transparent background)
 
-To change the knots, edit `data-loops` (how many loops) and `data-mess`
-(0 = neat, 1 = tangled) on each experience item in `index.html`.
+Link straight to an open section with `#biography`, `#curriculum` or `#contact`.

@@ -3,27 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Maria Grazia Longu — Operations, Planning &amp; Continuous Improvement</title>
   <meta name="description" content="Maria Grazia Longu is an industrial engineer and operations & planning specialist in Dublin. Lean, continuous improvement, demand and supply planning, inventory and forecasting — ex Bulgari (LVMH), SC Johnson, JMAC Europe.">
   <meta name="author" content="Maria Grazia Longu">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mglongu.github.io/Personal-website/">
-  <meta name="theme-color" content="#121110">
-  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Maria Grazia Longu — I love making my life easier. I get paid to do the same for others.">
-  <meta property="og:description" content="Operations & Planning · Lean & Continuous Improvement · Dublin. A career told as a ball of yarn that slowly unravels.">
+  <meta property="og:description" content="Operations & Planning · Lean & Continuous Improvement · Dublin.">
   <meta property="og:url" content="https://mglongu.github.io/Personal-website/">
   <meta property="profile:first_name" content="Maria Grazia">
   <meta property="profile:last_name" content="Longu">
   <meta name="twitter:card" content="summary">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -50,203 +51,72 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#menu">Skip to content</a>
+  <div class="glow" aria-hidden="true"></div>
 
-  <!-- interactive background: a field of fibres + the thread that follows the cursor -->
-  <canvas id="field" aria-hidden="true"></canvas>
+  <main>
+    <header class="intro">
+      <p class="kicker"><span class="dot" aria-hidden="true">●</span> Curriculum website</p>
+      <h1>Maria Grazia Longu<span aria-hidden="true">.</span></h1>
+      <p class="role">Operations &amp; Planning — Lean &amp; Continuous Improvement — <em>Dublin</em></p>
+      <p class="motto">I love making my life easier. I get paid to do the same <span>for others.</span></p>
+    </header>
 
-  <!-- the ball of yarn and the thread it leaves behind -->
-  <svg id="yarn" aria-hidden="true" focusable="false">
-    <circle id="yarn-end" r="4"></circle>
-    <path id="thread"></path>
-    <g id="ball"></g>
-  </svg>
+    <!-- companies: fixed strip on the right on desktop, horizontal row under the motto on mobile -->
+    <aside class="strip" aria-labelledby="strip-label">
+      <p class="strip-label" id="strip-label">Worked for &amp; with</p>
+      <div class="strip-window">
+        <ul class="strip-track">
+          <li><a href="https://www.alstom.com" target="_blank" rel="noopener noreferrer"><img src="logos/alstom.png" alt="Alstom" width="640" height="125"></a></li>
+          <li class="tall"><a href="https://www.leroymerlin.it" target="_blank" rel="noopener noreferrer"><img src="logos/leroymerlin.png" alt="Leroy Merlin" width="640" height="385"></a></li>
+          <li class="square"><a href="https://www.credem.it" target="_blank" rel="noopener noreferrer"><img src="logos/credem.png" alt="Credem" width="400" height="400"></a></li>
+          <li><a href="https://www.bulgari.com" target="_blank" rel="noopener noreferrer"><img src="logos/bulgari.png" alt="Bulgari" width="640" height="63"></a></li>
+          <li><a href="https://www.scjohnson.com" target="_blank" rel="noopener noreferrer"><img src="logos/scjohnson.png" alt="SC Johnson" width="640" height="211"></a></li>
+          <li><a href="https://matthey.com" target="_blank" rel="noopener noreferrer"><img src="logos/johnsonmatthey.png" alt="Johnson Matthey" width="370" height="46"></a></li>
+        </ul>
+      </div>
+    </aside>
 
-  <div class="cursor" aria-hidden="true"><span class="cursor-ring"><b class="cursor-label"></b></span></div>
+    <div class="menu" id="menu">
+      <section class="item" id="biography">
+        <h2><button type="button" aria-expanded="true" aria-controls="p-bio"><span class="n" aria-hidden="true">01</span>Biography<span class="pm" aria-hidden="true">−</span></button></h2>
+        <div class="panel" id="p-bio"><div><div class="inner">
+          <p>Industrial engineer with nine-plus years in operations, trained in Italy and based in Dublin.</p>
+          <p>I started as a lean consultant, mapping factory floors and hunting waste. Then I moved into planning: supply for African markets at SC Johnson, then distribution, demand and revenue for Bulgari's jewelry business worldwide.</p>
+          <p>Today I run inventory for around ten of Europe's most iconic cultural sites. Different products, same instinct: map the process, find the waste, fix the flow.</p>
+        </div></div></div>
+      </section>
 
-  <header class="nav">
-    <a class="mark" href="#top" aria-label="Maria Grazia Longu, back to top">M<em>G</em>L</a>
-    <nav aria-label="Sections">
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">Operations &amp; Planning <span>/</span> Lean <span>/</span> Dublin</p>
-          <h1>Maria Grazia <em>Longu</em></h1>
-          <blockquote class="motto">
-            <p>I love making my life easier.<br>I get paid to do the same <em>for&nbsp;others.</em></p>
-          </blockquote>
-          <ol class="method" aria-label="How I work">
-            <li><span>01</span>Map the process</li>
-            <li><span>02</span>Find the waste</li>
-            <li><span>03</span>Fix the flow</li>
+      <section class="item" id="curriculum">
+        <h2><button type="button" aria-expanded="true" aria-controls="p-cv"><span class="n" aria-hidden="true">02</span>Curriculum<span class="pm" aria-hidden="true">−</span></button></h2>
+        <div class="panel" id="p-cv"><div><div class="inner">
+          <ol class="tl">
+            <li><p class="when">2026 — now</p><h3>Inventory Manager <span>LivTours</span></h3><p>Ticket purchasing and inventory planning for ~10 iconic European cultural sites. Forecasting models, dashboards and purchasing SOPs built from scratch. Leading the team.</p></li>
+            <li><p class="when">2024 — 2026</p><h3>Revenue Tracking Coordinator <span>Bulgari (LVMH)</span></h3><p>Allocations and revenues of business partners worldwide. Monthly landing estimates and daily tracking, reported to COMEX.</p></li>
+            <li><p class="when">2023 — 2024</p><h3>Demand Planner, New Jewelry Launches <span>Bulgari (LVMH)</span></h3><p>Volumes and market strategies for new launches, aligned with Marketing, Inventory and Production.</p></li>
+            <li><p class="when">2022 — 2023</p><h3>Global Distribution Planner, Jewelry <span>Bulgari (LVMH)</span></h3><p>Worldwide distribution of a multi-billion € collection. A new communication process cut internal email volume by 70%.</p></li>
+            <li><p class="when">2019 — 2022</p><h3>Supply Planner <span>SC Johnson</span></h3><p>Production planning for Kenya, Ghana, South Africa and Nigeria. S&amp;OP, case fill rate and stock coverage KPIs.</p></li>
+            <li><p class="when">2016 — 2019</p><h3>Lean Management Consultant <span>JMAC Europe</span></h3><p>Lean transformation, TPM and process redesign for industrial clients across Europe. Trained middle managers on operational excellence.</p></li>
+            <li><p class="when">2015</p><h3>Intern <span>Industrie Plastiche Lombarde</span></h3><p>Optimised the layout of production lines.</p></li>
+            <li><p class="when">2012 — 2017</p><h3>MSc &amp; BSc, Industrial Management <span>LIUC – Università Cattaneo</span></h3><p>Erasmus+ at MCI Innsbruck · exchange at Soongsil University, Seoul.</p></li>
           </ol>
-        </div>
-        <div class="hero-ball" id="ball-anchor" aria-hidden="true"></div>
-      </div>
-      <a class="scroll-hint" href="#experience" data-cursor="scroll"><span>Scroll to unravel</span><i></i></a>
-    </section>
+        </div></div></div>
+      </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section experience" id="experience" aria-labelledby="xp-title">
-      <div class="wrap">
-        <header class="sec-head">
-          <p class="kicker">2012 → today</p>
-          <h2 id="xp-title">Every role started as a <em>knot.</em></h2>
-        </header>
-
-        <ol class="xp">
-          <li class="xp-item" data-loops="4" data-mess="0.9" data-seed="11">
-            <details>
-              <summary data-cursor="open">
-                <span class="node"></span>
-                <span class="xp-year">2012–17</span>
-                <span class="xp-role">MSc &amp; BSc, Industrial Management</span>
-                <span class="xp-org">LIUC – Università Cattaneo</span>
-                <span class="xp-plus" aria-hidden="true"></span>
-              </summary>
-              <ul class="xp-body">
-                <li>Master's degree (2015–17) and Bachelor's degree (2012–15) in Industrial Management, Castellanza.</li>
-                <li>Erasmus+ at MCI | The Entrepreneurial School, Innsbruck; exchange at Soongsil University, Seoul.</li>
-                <li>Internship at Industrie Plastiche Lombarde (2015): optimised the layout of production lines.</li>
-              </ul>
-            </details>
-          </li>
-
-          <li class="xp-item" data-loops="3" data-mess="0.75" data-seed="37">
-            <details>
-              <summary data-cursor="open">
-                <span class="node"></span>
-                <span class="xp-year">2016–19</span>
-                <span class="xp-role">Lean Management Consultant</span>
-                <span class="xp-org">JMAC Europe · Milan</span>
-                <span class="xp-plus" aria-hidden="true"></span>
-              </summary>
-              <ul class="xp-body">
-                <li>Lean transformation and continuous improvement for industrial clients across Europe: TPM, process redesign, waste reduction.</li>
-                <li>Trained and coached middle managers on autonomous maintenance and operational excellence.</li>
-              </ul>
-            </details>
-          </li>
-
-          <li class="xp-item" data-loops="2.2" data-mess="0.6" data-seed="41">
-            <details>
-              <summary data-cursor="open">
-                <span class="node"></span>
-                <span class="xp-year">2019–22</span>
-                <span class="xp-role">Supply Planner</span>
-                <span class="xp-org">SC Johnson · Arese</span>
-                <span class="xp-plus" aria-hidden="true"></span>
-              </summary>
-              <ul class="xp-body">
-                <li>Production planning for Kenya, Ghana, South Africa and Nigeria across in-house plants and third-party manufacturers.</li>
-                <li>Risks and opportunities at S&amp;OP; owner of case fill rate and stock coverage KPIs.</li>
-                <li>Formulation changes and lifecycle transitions with minimal write-offs and obsolescence.</li>
-              </ul>
-            </details>
-          </li>
-
-          <li class="xp-item" data-loops="1.4" data-mess="0.4" data-seed="53">
-            <details>
-              <summary data-cursor="open">
-                <span class="node"></span>
-                <span class="xp-year">2022–26</span>
-                <span class="xp-role">Distribution, Demand &amp; Revenue Planning</span>
-                <span class="xp-org">Bulgari (LVMH) · Dublin</span>
-                <span class="xp-plus" aria-hidden="true"></span>
-              </summary>
-              <ul class="xp-body">
-                <li><strong>Global Distribution Planner, Jewelry.</strong> Worldwide distribution of a multi-billion € collection; a new communication process cut internal email volume by 70%.</li>
-                <li><strong>Demand Planner, New Launches.</strong> Forecast volumes and market strategies for new jewelry launches with Marketing.</li>
-                <li><strong>Revenue Tracking Coordinator.</strong> Allocations and revenues of business partners worldwide; monthly landing estimates for COMEX.</li>
-              </ul>
-            </details>
-          </li>
-
-          <li class="xp-item is-now" data-loops="0" data-mess="0" data-seed="89">
-            <details>
-              <summary data-cursor="open">
-                <span class="node"></span>
-                <span class="xp-year">2026–now</span>
-                <span class="xp-role">Inventory Manager</span>
-                <span class="xp-org">LivTours · Dublin</span>
-                <span class="xp-plus" aria-hidden="true"></span>
-              </summary>
-              <ul class="xp-body">
-                <li>Ticket purchasing and inventory planning for around ten of Europe's most iconic cultural sites.</li>
-                <li>Forecasting models, dashboards and purchasing SOPs built from scratch. Leading the team.</li>
-              </ul>
-            </details>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- COMPANIES -->
-    <section class="companies" aria-labelledby="co-title">
-      <div class="wrap">
-        <h2 id="co-title" class="kicker">Companies I've worked for &amp; with</h2>
-      </div>
-      <div class="marquee" data-cursor="visit">
-        <ul class="marquee-track">
-          <li><a href="https://www.alstom.com" target="_blank" rel="noopener"><b>Alstom</b><span>Rail &amp; mobility</span></a></li>
-          <li><a href="https://www.leroymerlin.it" target="_blank" rel="noopener"><b>Leroy Merlin</b><span>Retail</span></a></li>
-          <li><a href="https://www.credem.it" target="_blank" rel="noopener"><b>Credem</b><span>Banking</span></a></li>
-          <li><a href="https://www.bulgari.com" target="_blank" rel="noopener"><b>Bulgari</b><span>Luxury · LVMH</span></a></li>
-          <li><a href="https://www.scjohnson.com" target="_blank" rel="noopener"><b>SC Johnson</b><span>Consumer goods</span></a></li>
-          <li><a href="https://matthey.com" target="_blank" rel="noopener"><b>Johnson Matthey</b><span>Sustainable technologies</span></a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section skills" id="skills" aria-labelledby="sk-title">
-      <div class="wrap">
-        <header class="sec-head">
-          <p class="kicker">What I can do for you</p>
-          <h2 id="sk-title">The untangling <em>toolkit.</em></h2>
-        </header>
-        <ul class="tools">
-          <li><h3>Lean &amp; process</h3><p>Process mapping, waste reduction, TPM, SOPs people actually follow.</p></li>
-          <li><h3>Planning</h3><p>Demand, supply, distribution and inventory. S&amp;OP from plant to launch.</p></li>
-          <li><h3>Data</h3><p>Forecasts, dashboards and landing estimates leadership can act on.</p></li>
-          <li><h3>Alignment</h3><p>One plan for Marketing, Production and Inventory — and fewer emails.</p></li>
-        </ul>
-        <dl class="numbers">
-          <div><dt>fewer internal emails</dt><dd>−70%</dd></div>
-          <div><dt>iconic sites planned</dt><dd>~10</dd></div>
-          <div><dt>African markets</dt><dd>4</dd></div>
-          <div><dt>years untangling</dt><dd>9+</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <span class="node node-end" id="thread-end"></span>
-        <p class="kicker">Next knot</p>
-        <h2 id="contact-title">Got something <em>tangled?</em></h2>
-        <p class="contact-lede">Tell me where it hurts. I'll map it, find the waste and fix the flow.</p>
-        <a class="cta magnetic" href="https://www.linkedin.com/in/maria-grazia-longu/" rel="me noopener" target="_blank" data-cursor="hello"><span>Let's talk on LinkedIn</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <div class="wrap">
-      <span>© 2026 Maria Grazia Longu</span>
-      <span>Made with one red thread</span>
+      <section class="item" id="contact">
+        <h2><button type="button" aria-expanded="true" aria-controls="p-contact"><span class="n" aria-hidden="true">03</span>Contact<span class="pm" aria-hidden="true">−</span></button></h2>
+        <div class="panel" id="p-contact"><div><div class="inner">
+          <p>Got something tangled? Tell me where it hurts.</p>
+          <div class="links">
+            <a class="btn primary" href="https://calendly.com/mariagrazialongu/appuntamento" target="_blank" rel="noopener noreferrer">Book a call <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="sr-only"> (opens Calendly in a new tab)</span></a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/maria-grazia-longu/" target="_blank" rel="me noopener noreferrer">LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div></div></div>
+      </section>
     </div>
-  </footer>
+
+    <footer class="foot">© 2026 Maria Grazia Longu</footer>
+  </main>
 
   <script src="script.js" defer></script>
 </body>
