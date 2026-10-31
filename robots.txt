@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mglongu.github.io/Personal-website/sitemap.xml
+Sitemap: https://mglongu.com/sitemap.xml
